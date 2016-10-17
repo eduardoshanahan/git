@@ -1,9 +1,9 @@
-# Docker image with Python 2.7, based in Alpine
+# Docker image with Git, based in Alpine
 
 ## Running an interactive session
 
 ```bash
-docker run -it --rm eduardoshanahan/python
+docker run -it --rm eduardoshanahan/git
 ```
 
 Or with Docker Compose
