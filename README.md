@@ -1,21 +1,29 @@
 # Docker image with Git, based in Alpine
 
-## Running an interactive session
+## Building
 
-```bash
-docker run -it --rm eduardoshanahan/git
+```
+docker build . -t eduardoshanahan/git:latest
+```
+
+## Running an interactive test
+
+```
+docker run --rm -it eduardoshanahan/git:latest
 ```
 
 Or with Docker Compose
 
-```bash
+```
 docker-compose run --rm shell
 ```
 
 ## Development
 
-If you want to make some changes and version it, [bumpversion](https://pypi.python.org/pypi/bumpversion) is available
+To send the commits to the remote server, you can use the script
 
-```bash
-bumpversion patch
 ```
+./save.sh
+```
+
+which will also create a new tag if the version is updated.
